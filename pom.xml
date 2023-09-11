@@ -101,6 +101,7 @@
                     <argLine>
                         --illegal-access=permit
                     </argLine>
+                    <groups>controller</groups>
                 </configuration>
             </plugin>
             <plugin>
