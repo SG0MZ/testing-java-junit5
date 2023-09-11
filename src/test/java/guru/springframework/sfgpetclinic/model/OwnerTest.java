@@ -1,6 +1,7 @@
 package guru.springframework.sfgpetclinic.model;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
@@ -20,6 +21,8 @@ class OwnerTest {
 						() -> assertEquals("Key West",owner.getCity()),
 						() -> assertEquals("1231231234",owner.getTelephone())
 				));
+		
+		assertThat(owner.getCity(), is("Key West"));
 	}
 
 }
